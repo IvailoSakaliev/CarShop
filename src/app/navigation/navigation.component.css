@@ -1,0 +1,20 @@
+.headerMenu
+{
+	background-color: black;
+}
+.menu li 
+{
+	list-style: none;
+	display: inline-block;
+	margin-top: 10px;
+}
+.menu li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+#loginLinks
+{
+	text-align: right;
+}

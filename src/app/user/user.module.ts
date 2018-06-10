@@ -9,4 +9,4 @@ import { UserComponent } from "./user.component";
     exports: [UserComponent]
 })
 
-export class Usermodule{}
+export class UserModule{}
