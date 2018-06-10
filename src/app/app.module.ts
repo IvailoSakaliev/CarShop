@@ -1,12 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
 import { AppComponent } from './app.component';
-
 import { UserModule } from "./user/user.module";
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
+import { AppRoutesModule } from './router.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    AppRoutesModule,
     UserModule
   ],
   providers: [],
