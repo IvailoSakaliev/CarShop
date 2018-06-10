@@ -6,4 +6,7 @@ import {Component} from "@angular/core";
     styleUrls: ['./contacts.component.css']
   })
 
-  export class ContactsComponent{}
+export class ContactsComponent{
+  contact = "Contact";
+  profileImagePath = "../../assert/images/contactImage.jpg";
+}
