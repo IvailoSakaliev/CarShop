@@ -5,7 +5,6 @@ import { UserModule } from "./user/user.module";
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutesModule } from './router.module';
-import { HttpModule } from "@angular/http"; 
 
 @NgModule({
   declarations: [
@@ -15,7 +14,6 @@ import { HttpModule } from "@angular/http";
   ],
   imports: [
     BrowserModule,
-    HttpModule,
     AppRoutesModule,
     UserModule
   ],

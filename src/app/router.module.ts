@@ -6,7 +6,6 @@ import { ContactsComponent } from "./contact/contacts.component";
 import {FormsModule} from "@angular/forms";
 import { CarComponent } from "./cars/cars.component";
 import {RegistrationComponent} from "./user/reg/reg.component";
-import { HttpServise } from "./core/http.servise";
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -26,7 +25,6 @@ const routes: Routes = [
     ],
     imports: [RouterModule.forRoot(routes),
         FormsModule],
-        providers: [HttpServise],
     exports: [RouterModule]
 })
 
