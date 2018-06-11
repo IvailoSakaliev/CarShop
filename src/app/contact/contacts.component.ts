@@ -8,5 +8,10 @@ import {Component} from "@angular/core";
 
 export class ContactsComponent{
   contact = "Contact";
-  profileImagePath = "../../assert/images/contactImage.jpg";
+  profileImagePath = "./assets/images/contactImage.jpg";
+  adress = "бул. България 236 А - На къра";
+  tel = "0898090909";
+  facebook = "https://www.facebook.com/ivailo.sakaliev1";
+  instagram = "https://www.instagram.com/ivailosakaliev/";
+  github = "https://github.com/IvailoSakaliev";
 }
