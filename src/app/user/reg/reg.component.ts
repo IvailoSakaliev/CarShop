@@ -1,5 +1,6 @@
 import {Component} from "@angular/core";
 import {Registration} from "./reg"
+import { RegistrationServise } from "./reg.servise";
 
 @Component({
     selector: 'reg',
@@ -10,6 +11,8 @@ import {Registration} from "./reg"
 export class RegistrationComponent{
     user = new Registration();
 
+    constructor(public registerServise : RegistrationServise){}
+    
     submitRegistration()
     {
         console.log(this.user);
