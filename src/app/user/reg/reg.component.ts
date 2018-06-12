@@ -1,5 +1,6 @@
 import {Component, OnInit} from "@angular/core";
 import {AuthemticationServise} from "../../core/authentication.servise";
+import { Registration } from "./reg";
 import { NgForm } from "@angular/forms";
 import { Router } from "@angular/router";
 
@@ -13,7 +14,7 @@ import { Router } from "@angular/router";
 export class RegistrationComponent{
     public email: string;
     public password: string;
-    constructor(public authService: AuthemticationServise, public route: Router) { }
+    constructor(public authService: AuthemticationServise, public route: Router, ) { }
 
     ngOnInit() {
     }
