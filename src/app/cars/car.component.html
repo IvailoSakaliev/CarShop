@@ -8,7 +8,7 @@
                 <input type="text"
                         id="name" 
                         class="form-control" 
-                        [(ngModel)] = "carServise.car.name" 
+                        [(ngModel)] = "carServise.car.$key" 
                         name = "name"
                         #name = "ngModel"
                         required>
@@ -38,9 +38,11 @@
                 <input type="text" 
                         id="year" 
                         class="form-control" 
-                        [(ngModel)] = "carServise.car.year"
-                        name="year"
                         #year = "ngModel"
+                        name="year"
+                        [(ngModel)] = "carServise.car.year"
+                        
+                       
                         required>
             </div>
            <button type="submit" class="btn btn-success">Add</button>

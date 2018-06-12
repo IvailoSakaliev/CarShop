@@ -13,9 +13,14 @@ export class CarServise {
     return this.carList;
   }
 
-  addCar(car : Car):void
+  addCar(car : Car)
   {
-    this.carList.push({content : car, done: false});
+    this.carList.push({
+      name: car.name,
+      engine : car.engine,
+      model : car.model,
+      year: car.year
+    });
   }
 
   DeleteCar($key : string){

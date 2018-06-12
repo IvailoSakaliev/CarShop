@@ -1,7 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {AuthemticationServise} from "../../core/authentication.servise";
-import { Registration } from "./reg";
 import { NgForm } from "@angular/forms";
+import { Router } from "@angular/router";
 
 @Component({
     selector: 'reg',
@@ -11,15 +11,17 @@ import { NgForm } from "@angular/forms";
 
 
 export class RegistrationComponent{
-    public user: Registration = new Registration()
+    public email: string;
+    public password: string;
+    constructor(public authService: AuthemticationServise, public route: Router) { }
 
-    constructor()
-    {
-    
+    ngOnInit() {
     }
-    onSubmit(form: NgForm) {
-        
-      }
+
+    onRegister() {
+        this.authService.register(this.email, this.password);
+        this.route.navigate(['/login']);
+    }
     
     
     
