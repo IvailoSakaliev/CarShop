@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms'
 
 import { CarServise } from './car.servise';
-import { Car } from './cars';
 @Component({
   selector: 'cars',
   templateUrl: './car.component.html',
@@ -10,18 +9,16 @@ import { Car } from './cars';
   providers: [CarServise]
 })
 export class CarComponent implements OnInit {
-    car: Car = new Car();
-  constructor(private carServise: CarServise) {
-    carServise.car = this.car;
-   }
+
+  constructor(private carServise: CarServise) { }
 
   ngOnInit() {
 
   }
 
-  onSubmit() {
-    if (this.car.$key == null)
-      this.carServise.addCar(this.car);
+  onSubmit(cars: NgForm) {
+    if (cars.value.$key == null)
+      this.carServise.addCar(cars.value);
    
     // this.tostr.success('Submitted Succcessfully', 'Employee Register');
   }
