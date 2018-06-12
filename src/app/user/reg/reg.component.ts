@@ -1,17 +1,28 @@
-import {Component} from "@angular/core";
-import {Registration} from "./reg"
+import {Component, OnInit} from "@angular/core";
+import {AuthemticationServise} from "./reg.servise";
+import { Registration } from "./reg";
+import { NgForm } from "@angular/forms";
 
 @Component({
     selector: 'reg',
-    templateUrl: './reg.component.html'
+    templateUrl: './reg.component.html',
+    providers: [AuthemticationServise]
 })
 
 
 export class RegistrationComponent{
-    user = new Registration();
+    public user: Registration = new Registration()
 
-    submitRegistration()
+    constructor()
     {
-        console.log(this.user);
+    
     }
+    onSubmit(form: NgForm) {
+        
+      }
+    
+    
+    
+      
+
 }
