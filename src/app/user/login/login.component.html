@@ -1,0 +1,28 @@
+<h1>Login</h1>
+<div class="contaainer">
+    <div class="row">
+        <div class="col-md-5">
+            <form (ngSubmit)= "OnLogin(login)" #login = "ngForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text"
+                            class="form-control"
+                            id="email"
+                            name = "email"
+                            #email = ngModel
+                            [(ngModel)]= "email">
+                </div>
+                <div class="form-group">
+                    <label for="pass">Password</label>
+                    <input type="text"
+                            class="form-control"
+                            id="pass"
+                            name = "pass"
+                            #password = ngModel
+                            [(ngModel)]= "password">
+                </div>
+                <button type="submit" class="btn btn-success">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
