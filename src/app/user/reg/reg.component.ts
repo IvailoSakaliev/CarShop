@@ -1,5 +1,5 @@
 import {Component, OnInit} from "@angular/core";
-import {AuthemticationServise} from "./reg.servise";
+import {AuthemticationServise} from "../../core/authentication.servise";
 import { Registration } from "./reg";
 import { NgForm } from "@angular/forms";
 
